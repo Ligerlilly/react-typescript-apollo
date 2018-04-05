@@ -69,9 +69,9 @@ export class Dashboard extends React.Component<ReduxState & ReduxActions & Dashb
                 <br />
                 <br />
                 <div style={{display: "flex", flexDirection: "row"}}>
-                    <TLV1 />
+                    {/* <TLV1 /> */}
                     <TLV2 />
-                    <TLV3  {...genericRouteProps} />
+                    {/* <TLV3  {...genericRouteProps} /> */}
                 </div>
             </div>
         )

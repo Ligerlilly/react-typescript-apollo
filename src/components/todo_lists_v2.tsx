@@ -122,9 +122,6 @@ interface DeleteVars {
     }
 }
 
-type A = {readonly a: number}
-type B = {readonly b: number}
-
 const withTodoQueries = compose(
     graphql<{}>(deleteTodoItemMutation, { name: "deleteTodo" }),
     graphql<{}>(deleteTodoListMutation, { name: "deleteTodoList" }),
