@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from "redux"
-
 import createBrowserHistory from "history/createBrowserHistory"
 import createHashHistory from "history/createHashHistory"
+const { logger } = require(`redux-logger`)
 
 // Use hash history for staging branches - if path begins with /branch, otherwise use browser history
 const useHashHistory = window.location.pathname.match(/^\/branch\//)
@@ -25,7 +25,7 @@ const middleware = routerMiddleware(history)
 // Also apply our middleware for navigating
 export const store = createStore(
   rootReducer,
-  applyMiddleware(middleware, sagaMiddleware),
+  applyMiddleware(middleware, sagaMiddleware, logger),
 )
 
 sagaMiddleware.run(rootSaga)

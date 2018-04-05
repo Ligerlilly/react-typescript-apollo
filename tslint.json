@@ -24,7 +24,7 @@
         "jsx-boolean-value": true,
         "jsx-curly-spacing": [true, "never"],
         "jsx-no-bind": true,
-        "jsx-no-lambda": true,
+        "jsx-no-lambda": false,
         "jsx-no-multiline-js": false,
         "jsx-no-string-ref": true,
         "jsx-self-close": true,
@@ -118,7 +118,6 @@
         "readonly-keyword": true,
         "readonly-array": true,
         "no-let": true,
-
         // // Functional style rules
         // "no-this": true
         // "no-class": true

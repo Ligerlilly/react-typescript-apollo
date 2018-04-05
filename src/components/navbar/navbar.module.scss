@@ -11,7 +11,7 @@ $nav-bar-app-selector-color: $white;
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: $nav-bar-bg;
+    background-color: $nav-bar-bg !important;
     color: $nav-bar-color;
 }
 
